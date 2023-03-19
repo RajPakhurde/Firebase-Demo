@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/imProfile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"/>
+
+    <item
+        android:id="@+id/imSearch"
+        android:title="Search"
+        android:icon="@drawable/baseline_search_24"/>
+
+    <item
+        android:id="@+id/imChat"
+        android:title="Chat"
+        android:icon="@drawable/baseline_chat_24"/>
+
+    <item
+        android:id="@+id/imVideo"
+        android:title="Video"
+        android:icon="@drawable/baseline_videocam_24"/>
+</menu>

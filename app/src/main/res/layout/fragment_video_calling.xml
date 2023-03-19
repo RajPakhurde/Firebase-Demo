@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.VideoCallingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/local_user"
+                android:layout_width="250dp"
+                android:layout_height="280dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="6dp"
+                android:background="#c1c1c1"/>
+
+            <FrameLayout
+                android:id="@+id/remote_user"
+                android:layout_width="250dp"
+                android:layout_height="280dp"
+                android:layout_centerHorizontal="true"
+                android:background="#c1c1c1"
+                android:layout_below="@id/local_user"/>
+
+
+            <Button
+                android:id="@+id/btnJoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/remote_user"
+                android:text="Join"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"
+                android:layout_alignStart="@id/remote_user"/>
+
+            <Button
+                android:id="@+id/btnLeave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/remote_user"
+                android:text="Leave"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"
+                android:layout_alignEnd="@id/remote_user"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
